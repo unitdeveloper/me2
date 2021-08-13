@@ -1,0 +1,3 @@
+database/*
+docker/*
+#main-local.php

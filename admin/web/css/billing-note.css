@@ -1,0 +1,327 @@
+@media print {
+	@page {
+
+		padding:0px !important;
+		margin:0px !important;
+		size: 203mm 279mm;
+		/*size: 203mm 289mm;*/
+	    /*size: 297mm 210mm; /* landscape */
+	    /* you can also specify margins here: */
+
+	    /*margin: 25mm;*/
+	   /* margin-right: 45mm;*/ /* for compatibility with both A4 and Letter */
+	 }
+
+	.btn-print, 
+	.menu-right-slide, 
+	.menu-left-click,
+	.contextMenu,
+	.custom-menu{
+		display: none !important;
+		overflow-y: hidden !important;
+		visibility: hidden !important;
+
+	}
+
+	.body-content{
+		padding:0px !important;
+		margin:0px !important;
+	} 
+
+	.body-print{
+
+		padding:0px !important;
+		margin:0px !important;
+		/*width: 29.7cm;*/
+		width: 203mm;
+		height: 279mm;
+
+		box-shadow: none;
+	}
+
+	.footer-page .footer-border{
+
+		margin-right: 20px !important;
+		margin-bottom: 0px !important;
+	
+	}
+
+	.other-page{
+		margin-top:50px;
+	}
+	 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-print{
+  background-color: rgb(253,253,253);
+  border-bottom: 1px solid #ccc;
+
+}
+
+ 
+
+ 
+.body-content{
+        background-color: rgb(100,100,100);
+        
+        position: relative;
+		
+        z-index: 5 !important;
+
+		padding: 30px 30px 50px 30px;
+		margin-bottom: -15px;
+
+
+
+}
+
+
+
+
+
+.body-print{
+
+		position: relative;
+
+		/*margin:30px 30px 30px 30px*/;
+
+		background-color: #fff;
+
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+		padding:5px;
+
+		width: 203mm; 
+		/* height: 279mm; */
+		height: 270mm;
+
+		font-size: 14px;
+		font-family: 'saraban';
+
+
+		
+
+
+		/* width:794px; height:1122px , width:21cm; height:29.7cm A4*/
+
+		
+}
+
+.profile-header {
+
+	padding-left: 5px;
+	 
+}
+
+.profile-header {
+	 
+	 margin: 20px 10px 0px 10px;
+
+	
+}
+
+
+/* ################## CONTENT #################### */
+.print-header{
+	 
+
+   /* margin: 10mm;*/
+	/*margin-right: 10mm; *//* for compatibility with both A4 and Letter */
+}
+
+.comp-info{
+	font-size: 17px;
+}
+ 
+.text-name{
+	font-size: 17px;
+	margin-top: 20px;
+	border:1px solid #000;
+	text-align: center;
+	padding:10px;
+	background-color: #f0ad4e; 
+	color:#fff;
+}
+
+.customer-info{
+	padding: 10px 5px 5px 0px;
+	height: 117px;
+}
+
+.text-comment{
+	margin-top: 10px;
+}
+
+.page-body{
+	padding: 0 10px 0 10px; 
+}
+
+.page-body-table{
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+ 
+}
+
+
+
+.page-body-table thead{
+	border-bottom: 1px solid #000;
+	background-color: #ccc; 
+}
+
+
+
+.page-body-table td{
+	border-left: 1px solid #000;
+	padding: 9px 10px 9px 10px;
+}
+
+
+
+.footer-summary{
+	
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	height: 40px;
+	background-color: #ccc;
+	 
+
+}
+
+.footer-summary td{
+	border-left: 1px solid #000;
+	padding: 10px 10px 0px 10px;
+}
+
+.text-sum{
+	text-align: right;
+}
+
+.number-summary{
+	text-align: right;
+}
+
+
+.footer-page{
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+
+}
+
+.footer-page .footer-border{
+	border:1px solid #000;
+	margin-right: 30px;
+	padding:5px;
+}
+
+
+
+.no-data{
+  margin-top:20%;
+  /*text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);*/
+  
+}
+
+.popover-title{
+	z-index: 500;
+}
+
+
+.body-content{
+    min-height: 900px;
+}
+.body-print-mini{
+    position: relative;
+
+    margin:30px 0px 0px 0px;
+
+    background-color: #fff;
+
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+
+    padding:5px;
+
+    width: 100px; 
+    height: 130px;
+
+    font-size: 11px;
+    font-family: 'saraban';
+
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.body-print-mini:hover{
+     
+    cursor: pointer;
+}
+.body-print-mini:active{
+     
+    cursor: pointer;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+}
+
+.body-print-mini table{
+    font-size: 8px;
+}
+
+.content-mini{
+   /* color: #efefef;*/
+    color: #fff;
+    border:none;
+
+}
+
+.hr-mini{
+    border-bottom: 1px solid #000;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+.footer-mini{
+    height: 30px;
+    border:1px solid #000;
+    margin-top: 3px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 14px;        
+    /*color: #fff;*/
+}
+
+.iconApp-mini{
+    position: absolute;
+    font-size: 17px;
+
+}
+.cust-file{
+    position: absolute;
+    left: 45%;
+    top:35%;
+    color: blue;
+    font-size: 12px;
+}
+.date-file{
+    position: absolute;
+    left: 30px;
+    top:47%;
+     
+    font-size: 12px;
+}
+.padding{
+    padding: 15px;
+}

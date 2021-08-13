@@ -1,0 +1,104 @@
+<?php
+
+use yii\helpers\Url;
+use yii\helpers\Html;
+use yii\grid\GridView;
+use yii\widgets\Pjax;
+/* @var $this yii\web\View */
+/* @var $searchModel admin\modules\warehousemoving\models\AdjustSearch */
+/* @var $dataProvider yii\data\ActiveDataProvider */
+
+$this->title = Yii::t('common', 'Item Journal');
+//$this->params['breadcrumbs'][] = $this->title;
+?>
+<?= $this->render('@admin/themes/adminlte/views/layouts/_menu_apps') ?>
+<div class="warehouse-header-index" ng-init="Title='<?= Html::encode($this->title) ?>'">
+
+
+
+
+<?= GridView::widget([
+        'dataProvider' => $dataProvider,
+        'filterModel' => $searchModel,
+        'rowOptions' => function($model){
+            return ['class' => ' '];
+        },
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
+
+            //'id',
+            //'line_no',
+            //'PostingDate',
+            'DocumentDate',
+            //'TypeOfDocument',
+            // 'SourceDocNo',
+            // 'DocumentNo',
+             [
+                'attribute' => 'DocumentNo',
+                'format' => 'html',
+                'contentOptions' => ['class' => 'relative'],
+
+                'value' => function($model){
+
+                    return Html::a($model->DocumentNo,['journal/update','id'=>$model->id]);
+
+                }
+            ],
+            'SourceDoc',
+            
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'buttonOptions'=>['class'=>'btn btn-default'],
+                'contentOptions' => ['class' => 'text-right','style'=>'min-width:350px;'],
+                'template'=>'<div class="btn-group btn-group text-center" role="group"> {print}  {update}  {delete} </div>',
+                'options'=> ['style'=>'width:300px;'],
+                'buttons'=>[
+                    'print' => function($url,$model,$key){                      
+                        return Html::a('<i class="fas fa-print"></i> '.Yii::t('common','Print'),$url,['class'=>'btn btn-info','target'=>'_blank']);
+                    },
+                    'view' => function($url,$model,$key){
+                        return Html::a('<i class="fas fa-eye"></i> '.Yii::t('common','View'),$url,['class'=>'btn btn-default']);
+                    },
+                    'delete' => function($url,$model,$key){
+                        return Html::a('<i class="far fa-trash-alt"></i> ',$url,[
+                            'class' => 'btn btn-danger',
+                            'title' => Yii::t('common','Delete'),
+                            'data' => [
+                                'confirm' => Yii::t('common', 'Are you sure you want to delete this item?'),
+                                'method' => 'post',
+                            ],
+                        ]);
+                    },
+                    'update' => function($url,$model,$key){
+                        return Html::a('<i class="far fa-edit"></i> ',$url,['class'=>'btn btn-success','title' => Yii::t('common','Update')]);
+                    }
+
+                  ]
+              ],
+        ],
+    ]); ?>
+</div>
+
+<div class="content-footer hidden-lg hidden-md hidden-sm" >
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <?= Html::a('<i class="fas fa-list-ul"></i> '.Yii::t('common', 'Journal Line'), ['/warehousemoving/journal/journal-line-list'], ['class' => 'btn btn-default ']) ?>   
+        </div>
+        <div class="hidden-xs  col-sm-6 text-right">            
+             
+        </div>
+    </div>
+</div>
+
+
+<?php 
+$js=<<<JS
+
+$(document).ready(function(){
+    var footer = $('div.content-footer').html();
+    $('footer').html(footer).find('div.content-footer').fadeIn('slow');
+ 
+})
+
+JS;
+$this->registerJS($js,\yii\web\View::POS_END,'yiiOptions');

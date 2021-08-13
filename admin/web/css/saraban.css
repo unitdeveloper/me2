@@ -1,0 +1,13 @@
+
+@font-face {
+  font-family: "saraban"; /* Until not working 25/01/19 */
+  src: url("https://admin.ewinl.com/fonts/thsarabunnew-webfont.eot");
+  src: url("https://admin.ewinl.com/fonts/thsarabunnew-webfont.woff") format("woff");
+}
+
+body {
+  font-family: saraban, garuda;
+  font-size: 11px;
+}
+
+ 

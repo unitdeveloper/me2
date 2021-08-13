@@ -1,0 +1,93 @@
+.datepicker-dropdown{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  z-index: 1050 !important;
+}
+
+.datepicker-dropdown table.table-condensed thead tr{
+  background: #ccc;
+}
+/* MONTH NAME */
+.datepicker-dropdown table.table-condensed thead tr:nth-child(2) th  {
+/*.datepicker table thead tr th {*/
+  border-radius: 0px !important;
+  background-color: rgb(69, 188, 252);
+  color:#fff;
+
+}
+/* DATE NAME */
+.datepicker-dropdown table.table-condensed thead tr:nth-child(3) th  {
+  border-radius: 0px !important;
+  background-color: #ffe14c;
+}
+
+
+/* ### SUNDAY ### */
+/* HEADER */
+.datepicker-dropdown table.table-condensed thead th:nth-child(1).dow {
+  color: red ;
+}
+/* DATE NUMBER */
+.datepicker-dropdown table.table-condensed tbody td:nth-child(1).day {
+  color: red ;
+}
+
+
+
+/* HEADER ON HOVER */
+.datepicker-dropdown table.table-condensed thead tr:nth-child(2) th:hover{
+  background-color: rgb(0, 145, 226);
+  color:#fff;
+}
+
+/* NUMBER NOT THIS MONTH */
+.datepicker-dropdown table.table-condensed .old.day {
+  border-radius: 0px !important;
+  background-color: #fafafa;
+}
+.datepicker-dropdown table.table-condensed .new.day {
+  border-radius: 0px !important;
+  background-color: #fafafa;
+}
+
+@media (max-width: 768px) {
+  .datepicker {
+     /* min-width: 320px;
+     font-size: 18px; */
+   }
+    
+   .datepicker-days table.table-condensed{
+     width: 100%;
+     background-color: #fff;
+   }
+ 
+   .datepicker-months table.table-condensed{
+     width: 100%;
+   }
+ 
+   .datepicker-years table.table-condensed{
+     width: 100%;
+   }
+ 
+ }
+
+@media (max-width: 425px) {
+  .datepicker {
+    width: 85% ;
+    right: 0px ;
+  }
+  .datepicker-days table.table-condensed{
+    width: 77%;
+    background-color: #fff;
+  }
+
+  .datepicker-months table.table-condensed{
+    width: 100%;
+  }
+
+  .datepicker-years table.table-condensed{
+    width: 100%;
+  }
+
+}
+  
+

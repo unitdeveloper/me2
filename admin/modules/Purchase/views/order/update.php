@@ -1,0 +1,31 @@
+<?php
+
+use yii\helpers\Html;
+use yii\helpers\ArrayHelper;
+
+/* @var $this yii\web\View */
+/* @var $model common\models\PurchaseHeader */
+
+$this->title = Yii::t('common', 'Update {modelClass}: ', [
+    'modelClass' => 'Purchase Order',
+]) . $model->doc_no;
+$this->params['breadcrumbs'][] = ['label' => Yii::t('common', 'Purchase Headers'), 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => $model->doc_no, 'url' => ['view', 'id' => $model->doc_no]];
+$this->params['breadcrumbs'][] = Yii::t('common', 'Update');
+?>
+<?= $this->render('@admin/themes/adminlte/views/layouts/_menu_apps') ?>
+<div class="purchase-header-update" ng-init="Title='<?=$this->title?>'">
+<?php if(Yii::$app->session->hasFlash('alert')):?>
+    <?= \yii\bootstrap\Alert::widget([
+    'body'=>ArrayHelper::getValue(Yii::$app->session->getFlash('alert'), 'body'),
+    'options'=>ArrayHelper::getValue(Yii::$app->session->getFlash('alert'), 'options'),
+    ])?>
+<?php endif; ?>
+
+    <?= $this->render('_form', [
+        'model' => $model,
+        'searchModel' => $searchModel,
+        'dataProvider' => $dataProvider,
+    ]) ?>
+
+</div>

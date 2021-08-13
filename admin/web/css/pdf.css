@@ -1,0 +1,21 @@
+body {
+  font-family: "saraban", "garuda", "chulajaruek", "thaimono", "freesia",
+    sans-serif;
+  font-size: 12pt;
+  font-weight: 500;
+}
+
+table.layout {
+  border: 0mm solid black;
+  border-collapse: collapse;
+  font-size: 16pt;
+}
+
+table.thead {
+  font-size: 17pt;
+  font-weight: 500;
+}
+
+table.td{
+    font-family: 'saraban';
+}

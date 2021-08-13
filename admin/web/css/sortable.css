@@ -1,0 +1,273 @@
+#renders {
+  position: relative;
+  border-left: 1px solid #ccc;
+  padding-bottom: 100%;
+  /* margin-bottom: -100%; */
+  margin-top: -20px;
+  padding-top: 15px;
+}
+.active-items{
+  margin-top: -5px;
+}
+
+.child a.text-white {
+  color:#fff !important;
+}
+
+.render-menu-list .remove-group {
+  /* display:none; */
+  cursor: pointer;
+}
+
+.trash-zone .add-child,
+.trash-zone .edit-child {
+  /* display:none; */
+
+}
+.items-list .remove-item {
+  display:none;
+}
+
+.active-items .serialization i.fa-arrows-alt,
+.active-items .serialization i.fa-plus-square{
+  display:none;
+}
+
+
+
+.remove-group,
+.add-child,
+.edit-child {
+  cursor: pointer;
+}
+
+.dragged {
+  position: absolute;
+  top: 0;
+  opacity: 0.5;
+  z-index: 2000;
+}
+ol {
+  margin-left:-20px;
+  list-style-type: none;
+}
+ol.vertical {
+  margin: 0 0 9px 0;
+  min-height: 10px;
+}
+
+ol.vertical li {
+  display: block;
+  margin: 5px;
+  padding: 15px;
+  border: 1px solid #cccccc;
+  color: #0088cc;
+  background: #eeeeee;
+}
+
+ol.vertical li ol li {
+  color: #fff;
+  background: #01d0df !important;
+}
+
+ol.vertical li ol li ol li {
+  color: #fff;
+  background: #ff8656 !important;
+}
+
+ol.vertical li ol li ol li ol li {
+  color: #fff;
+  background: #ffe158 !important;
+}
+
+ol.vertical li ol li ol li ol li ol li{
+  color: #fff;
+  background: #ff0400 !important;
+}
+
+ol.vertical li ol li ol li ol li ol li ol li{
+  color: #fff;
+  background: #49c7c2 !important;
+}
+
+ol.vertical li ol li ol li ol li ol li ol li ol li{
+  color: #0088cc;
+  background: #eeeeee !important;
+}
+
+ol.vertical li.placeholder {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+ol.vertical li.placeholder:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  margin-top: -5px;
+  left: -5px;
+  top: -4px;
+  border: 5px solid transparent;
+  border-left-color: red;
+  border-right: none;
+}
+
+ 
+
+ol i.fa-arrows-alt {
+  cursor: pointer;
+ 
+}
+
+ol li.highlight {
+  background: #333333;
+  color: #999999;
+}
+
+ol li.highlight i.fa-arrows-alt {
+  /* background-image: url("../images/icon/glyphicons-halflings-white.png"); */
+}
+
+ 
+ol.serialization.active,
+ol.serialization ol.active {
+  border: 1px solid #333333;  
+  margin-left:0px !important;
+}
+
+ 
+ol.simple_with_animation li,
+ol.default li {
+  cursor: pointer;
+}
+ol.child li:hover{
+  margin-left:0px;
+  -webkit-transition: 0.2s;  
+  transition: 0.2s;
+}
+
+ol.simple_with_animation {
+  border: 1px solid #999999;
+}
+
+.switch-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80px;
+}
+
+.navbar-sort-container {
+  height: 200px;
+}
+
+ol.nav li,
+ol.nav li a {
+  cursor: pointer;
+}
+
+ol.nav .divider-vertical {
+  cursor: default;
+}
+
+ol.nav li.dragged {
+  background-color: #2c2c2c;
+}
+
+ol.nav li.placeholder {
+  position: relative;
+}
+
+ol.nav li.placeholder:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: red;
+  top: -6px;
+  margin-left: -5px;
+  border-bottom: none;
+}
+
+ol.nav ol.dropdown-menu li.placeholder:before {
+  border: 5px solid transparent;
+  border-left-color: red;
+  margin-top: -5px;
+  margin-left: none;
+  top: 0;
+  left: 10px;
+  border-right: none;
+}
+
+.sorted_table tr {
+  cursor: pointer;
+}
+
+.sorted_table tr.placeholder {
+  display: block;
+  background: red;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.sorted_table tr.placeholder:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-left-color: red;
+  margin-top: -5px;
+  left: -5px;
+  border-right: none;
+}
+
+.sorted_head th {
+  cursor: pointer;
+}
+
+.sorted_head th.placeholder {
+  display: block;
+  background: red;
+  position: relative;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.sorted_head th.placeholder:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: red;
+  top: -6px;
+  margin-left: -5px;
+  border-bottom: none;
+}
+
+
+@media (max-width: 1024px) {
+  #renders {
+    border-left: none ;
+  }
+}
+
+@media (max-width: 768px) {
+  #renders {
+    border-left: none ;
+  }
+
+  ol .row{
+    width:99%;
+  }
+
+}

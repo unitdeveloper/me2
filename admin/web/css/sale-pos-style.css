@@ -1,0 +1,434 @@
+.panel-promo{
+    height:354px;
+    /*height:250px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    background-repeat: no-repeat;
+    background-size:250px;*/
+  }
+  .grid-view{
+    height:546px;
+    position: relative;
+    background-color:rgb(226, 236, 230);
+  }
+
+
+  .amcharts-chart-div img{
+    -webkit-filter: drop-shadow(5px 20px 20px #222 );
+    filter: drop-shadow(5px 20px 20px #222);
+    margin:-40px 0px 0px -10px;
+
+  }
+
+
+  #chartdiv {
+      width		: 100%;
+      height	: 200px;
+      font-size	: 11px;
+   /* margin:-10px 0px 0px -10px !important;*/
+
+
+  }
+
+  #pieChartItemgroup {
+    width: 100%;
+    height: 380px;
+    font-size: 11px;
+    margin-top:-20px;
+  }
+
+  #barChartdiv, #barChartdiv2, #groupChart{
+    width: 100%;
+    height: 500px;
+  }
+
+  .full-width{
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 500px) {
+       /* #pieChartItemgroup text{
+         font-size: 20px;
+       } */
+  }
+
+  
+  .box-color{
+    height:20px; width:30px;
+    border:1px solid #ccc;
+    margin-right:5px;
+    padding:4px 0px 0px 6px;
+  }
+
+  .pagination{
+    margin-top:10px !important;
+  }
+
+  .colorpicker{
+    margin:0px;
+  }
+
+  .right-menu-widget .right-menu-top{
+    display:none;
+    height:60px;
+    background-color:rgb(59, 54, 54);
+    color:rgb(6, 233, 6);
+    font-size:25px;
+    padding:10px 2px 2px 0;
+    margin:2px -2px 0px 5px;
+    
+  }
+
+  .right-menu-widget .right-menu-top div.quantity{
+    text-align:right;   
+  }
+
+  .text-head{
+    margin-top:-28px !important;
+  }
+  .text-find{
+    margin-top:8px;
+    font-size:16px;
+  }
+
+  .grid-view .pagination{      
+      margin-top:-10px !important;
+      margin-right:0px !important;
+  }
+
+
+  .panel-footer .menu{
+    border:1px solid #fff;
+    padding:5px;
+    margin:-5px -10px 0 -10px !important;
+    height:90px;
+  }
+  
+  .panel-footer > .menu > p.label{
+      margin-bottom: 30px;
+  }
+  .panel-footer .menu .label-box{
+      margin-top:20px;
+    border:1px solid #ccc;
+    height:40px;
+    width:90px;
+    background-color:#fff;
+    font-size:16px;
+  }
+  table.pos-list >  thead{
+      /* visibility: hidden;         */
+  }
+  table.pos-list >  thead > tr{      
+    height:52px;
+}
+  table.pos-list >  tbody > tr{
+    height:43px;
+}
+
+
+
+
+
+
+/************************POS****************************/
+ 
+.panel-flat{
+    border-radius: 0px !important;
+}
+.search-barcode{
+    /* height:45px !important;
+    font-size: 18px; */
+}
+.text-change-money{
+     
+ 
+}
+a.product:active{
+    color:red !important;
+}
+ 
+
+@media print {
+    body.receipt { width: 58mm;}
+    body{ margin-top:-10px !important; }  
+    .sale-content,
+    .main-footer,
+    .product-picker,
+    .nav,
+    .btn-menu{
+        display: none;
+    }
+    .slip{
+        display: block;
+        height: 100% !important;
+        width: 47mm !important;
+        border:0 !important;
+        margin:0px 0px 0px -15px !important;
+        margin-right:0px !important;
+        padding-top:0px !important;
+        padding-left:0px !important;
+        padding-right:0px !important;
+        font-family:tahoma; 
+        font-size:7pt;
+    }
+    .slip-heading .row{
+        padding:0px !important;
+    }
+    h5{
+        position: absolute;
+        right:15px;
+        top:0px;
+        display: block;
+        font-size:7pt !important;
+        width:100%;
+    }
+    img{
+        position: absolute;
+        left:15px;
+        width:100px !important;
+    }
+    .slip-address{
+        margin-top:20px;
+    }
+    .text-change-money{
+        font-size:5pt; 
+        font-weight:400;
+    }
+    #endFinance{
+        display: none;
+    }
+    
+    
+    .sale-content .panel-body{
+
+        overflow: hidden;
+    }
+
+    
+    .modal {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        visibility: visible;
+        /**Remove scrollbar for printing.**/
+        overflow: visible !important;
+    }
+
+    .modal-body{
+        visibility: visible !important;
+        /**Remove scrollbar for printing.**/
+        overflow: visible !important;
+    
+    }
+    .modal-footer,.modal-header{
+        display: none;
+    }
+
+
+}
+.form-control[readonly]{
+    background:none !important;
+    color:#888;
+    height:20px;
+}
+.sale-event-header-form{
+
+}
+
+.btn-menu{
+    width: 100%;
+    text-align: center;
+    background-color:#f5f5f5 !important;
+    border:1px solid #ddd;
+    margin:4px 0 0 0 !important;
+    padding:9px !important;
+    height:65px;
+}
+
+.menu-list{
+    position: absolute;
+    border: 1px solid #ddd;
+    background-color: #e9e9e9;
+    color: rgb(0, 48, 255);
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    box-shadow: 1px 1px 1px 1px rgb(201, 201, 201);
+}
+.sale-content .panel-body{
+    height: 510px;
+    overflow-y: auto;
+}
+.sale-content .responsive{
+    margin-top:-15px !important;
+    margin-right:-15px !important;
+}
+.slip{
+    font-family: 'saraban',monospace;
+    height: 607px;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    width: 100%;
+    margin-top:40px;
+    margin-bottom:-5px;
+    padding:10px 2px 35px 5px;
+    border:1px solid #ddd;
+
+    /* border-left:1px solid #ccc;
+    position:fixed;*/
+    /*border: 1px solid #ccc;
+     padding:10px;
+    font-size:10px; */
+}
+.content {
+    
+    width: 100%;
+    margin-top: 0px;
+    padding: 5px ;
+    /* box-sizing: border-box; */
+}
+.product-zone{
+    
+}
+
+
+.button-menu{
+    /* position:fixed; bottom:0px;  */
+    margin:0px 0px 5px 5px; 
+    padding:10px 0px 5px 5px; 
+    background:#fff;
+}
+.button-menu .btn{
+    width:30%;
+}
+
+.subtotal{
+    height:45px;
+    width:100%;
+    border:1px solid;
+    font-size:25px;
+    background-color:#000;
+    color:#02f74e;
+    padding:5px;
+    text-align:right;
+}
+input.barcode-qty{
+    font-size:16px !important;
+    color:blue !important;
+    width:80px !important; 
+    border:none !important; 
+    background:none !important;
+    height:30px !important;
+    margin-top:-5px; 
+    text-align: right !important; 
+    outline: none !important;
+    padding-right:0px !important;
+}
+.table-pos .actions-render{
+    position:relative; 
+    width:180px; 
+    padding-right:50px;
+}
+@media only screen and (max-width: 767px) {
+    .slip{ padding:10px 0px 65px 5px;}
+    .button-menu{
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .button-menu .btn{
+        width:auto;
+    }
+    .table-pos{
+        width:100%;
+    }
+    .btn-delete-line{
+        position: absolute;
+        right:5px;
+        top:5px;
+    }
+    
+}
+
+.action-menu-pos{
+    float:right;
+    min-height:50px;
+    width:20px; 
+    background-color:#ccc; 
+    padding:0px; 
+    position:absolute; 
+    right:0px; 
+    top:0px;
+    cursor:pointer;
+    
+}
+.action-menu-pos > i{
+    padding:20px 4px 0px 0px;
+}
+.alias-pointer{
+    cursor: help;
+}
+
+
+
+
+
+.money-selected{
+    margin:10px 0 10px 0;
+    width:100%;
+}
+.money-selected .banknotes{
+    color:rgba(31, 31, 31, 0.39);
+    border: 1px solid #ccc;
+    padding: 13px 3px 0px 10px;
+    margin:0  0 0 10px;
+    text-align: right;
+    font-size: 5px;   
+    float: right;
+    height:40px;
+    width:70px;
+    background-image:url('../images/icon/money.png');
+    background-size: 150px;
+    cursor: pointer;
+}
+
+.money-selected #bank-100{        
+    background-position: left 74px top -2px;
+}
+.money-selected #bank-500{         
+    background-position: left -4px top 40px
+}
+.money-selected #bank-1000{    
+    background-position: left 71px top 40px
+}
+
+@media only screen and (max-width: 767px) {
+    input#item-search,
+    input.subtotal{
+        font-size: 16px;
+    }
+    .money-selected .banknotes{
+        color:rgba(31, 31, 31, 0.39);
+        border: 1px solid #ccc;
+        padding: 13px 3px 0px 10px;
+        margin:0 10px 0 0 ;
+        font-size: 5px;   
+        height:80px;
+        width:150px;
+        background-image:url('../images/icon/money.png');
+        background-size: 300px;
+        cursor: pointer;
+    }
+    .money-selected #bank-100{        
+        background-position: right -2px top -3px;
+    }
+    .money-selected #bank-500{         
+        background-position: left -1px top 80px;
+    }
+    .money-selected #bank-1000{    
+        background-position: left 151px top 82px;
+    }
+}

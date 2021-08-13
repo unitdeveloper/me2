@@ -1,0 +1,111 @@
+@media print{
+    .btn-print{
+      display: none;
+    }
+    .remark span{
+      color: red;
+    }
+    .pagination{
+      display: none;
+    }
+    .dataCalc{
+      border:0px;
+    }
+    .textComment{
+      border:0px;
+    }
+    a[href]:after {
+      content: none !important;
+    }
+
+    .main-footer{
+        display: none; 
+    }
+
+    .panel-primary {
+        border-color:#fff !important;
+        border:none;
+    }
+    .panel .panel-heading{
+        display: none;       
+    }
+    .panel .kv-panel-before{
+        display: none; 
+    }
+
+    .panel .panel-footer{
+        display: none; 
+    } 
+    
+     
+  }
+
+
+
+  .btn-print{
+      background-color: rgb(253,253,253);
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 20px;
+  }
+
+
+	.input-group-addon{
+		background-color: rgb(249,249,249) !important;
+		border: 1px solid #999 !important;
+
+	}
+
+  a.view-receipt{
+    padding: 0 5px 0 5px;
+     
+  }
+
+  a.view-receipt:hover{
+    color: red;
+  }
+  .select2-selection{
+    height: 34px !important;
+
+  }
+  .select2-container--krajee .select2-selection--single .select2-selection__placeholder {
+    color: #999;
+     
+  }
+
+  .select2-container .select2-selection--single .select2-selection__rendered {
+    padding-top: 5px;   
+  }
+
+  .text-sum{
+    margin:20px 0 0 0;
+  }
+
+  .text-sumVal{
+    margin:20px 0 0 0;
+    border-bottom: 5px double #ccc;
+  }
+
+  .sum-footer{
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .modal
+  {
+    overflow: hidden;
+    background:none !important;
+
+  }
+
+
+  .modal-dialog{
+     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .box-color{
+    width:20px !important;
+    height:20px;
+    border:1px solid #ccc;
+    position:absolute;
+    margin-left:-25px;
+  }
